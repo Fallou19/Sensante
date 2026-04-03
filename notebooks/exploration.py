@@ -48,3 +48,6 @@ print("\n" + "=" * 50)
 print("Exploration terminee !")
 print("Prochain lab : entrainer un modele ML")
 print("=" * 50)
+
+print(f"\n--- Patients par sexe et diagnostic ---")
+print(df.groupby(["sexe", "diagnostic"]).size())
